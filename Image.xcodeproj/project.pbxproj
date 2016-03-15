@@ -16,9 +16,9 @@
 		607393201C97B36500E50839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6073931E1C97B36500E50839 /* LaunchScreen.storyboard */; };
 		6073932B1C97B36500E50839 /* ImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073932A1C97B36500E50839 /* ImageTests.m */; };
 		607393361C97B36500E50839 /* ImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 607393351C97B36500E50839 /* ImageUITests.m */; };
-		6073934B1C97B3F200E50839 /* UIImage+WS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073934A1C97B3F200E50839 /* UIImage+WS.m */; };
 		6073934E1C97C0A500E50839 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6073934C1C97C0A500E50839 /* bg.png */; };
 		6073934F1C97C0A500E50839 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6073934D1C97C0A500E50839 /* logo.png */; };
+		607393571C97DD3000E50839 /* UIImage+WS.m in Sources */ = {isa = PBXBuildFile; fileRef = 607393561C97DD3000E50839 /* UIImage+WS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		607393311C97B36500E50839 /* ImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607393351C97B36500E50839 /* ImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUITests.m; sourceTree = "<group>"; };
 		607393371C97B36500E50839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607393491C97B3F200E50839 /* UIImage+WS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WS.h"; sourceTree = "<group>"; };
-		6073934A1C97B3F200E50839 /* UIImage+WS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WS.m"; sourceTree = "<group>"; };
 		6073934C1C97C0A500E50839 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		6073934D1C97C0A500E50839 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		607393551C97DD3000E50839 /* UIImage+WS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WS.h"; sourceTree = "<group>"; };
+		607393561C97DD3000E50839 /* UIImage+WS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +110,11 @@
 		6073930C1C97B36400E50839 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				607393541C97DD3000E50839 /* Category */,
 				607393101C97B36400E50839 /* AppDelegate.h */,
 				607393111C97B36400E50839 /* AppDelegate.m */,
 				607393131C97B36400E50839 /* ViewController.h */,
 				607393141C97B36400E50839 /* ViewController.m */,
-				607393491C97B3F200E50839 /* UIImage+WS.h */,
-				6073934A1C97B3F200E50839 /* UIImage+WS.m */,
 				607393161C97B36400E50839 /* Main.storyboard */,
 				6073934C1C97C0A500E50839 /* bg.png */,
 				6073934D1C97C0A500E50839 /* logo.png */,
@@ -152,6 +151,15 @@
 				607393371C97B36500E50839 /* Info.plist */,
 			);
 			path = ImageUITests;
+			sourceTree = "<group>";
+		};
+		607393541C97DD3000E50839 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				607393551C97DD3000E50839 /* UIImage+WS.h */,
+				607393561C97DD3000E50839 /* UIImage+WS.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +296,7 @@
 			files = (
 				607393151C97B36400E50839 /* ViewController.m in Sources */,
 				6073931B1C97B36400E50839 /* Image.xcdatamodeld in Sources */,
-				6073934B1C97B3F200E50839 /* UIImage+WS.m in Sources */,
+				607393571C97DD3000E50839 /* UIImage+WS.m in Sources */,
 				607393121C97B36400E50839 /* AppDelegate.m in Sources */,
 				6073930F1C97B36400E50839 /* main.m in Sources */,
 			);
@@ -518,6 +526,7 @@
 				6073933C1C97B36500E50839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6073933D1C97B36500E50839 /* Build configuration list for PBXNativeTarget "ImageTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				6073933F1C97B36500E50839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		607393401C97B36500E50839 /* Build configuration list for PBXNativeTarget "ImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				607393421C97B36500E50839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

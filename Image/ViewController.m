@@ -68,7 +68,7 @@
         NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)  lastObject] stringByAppendingPathComponent:@"new3.png"];
         [data writeToFile:path atomically:YES];
         NSLog(path);
-        // 也可保存到相册
+        // 也可保存到相册（如果确认要用，可以将其封装到Category里）
         UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil);
     });
 }
